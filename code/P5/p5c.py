@@ -9,6 +9,4 @@ def eval_resolution(high_res_images, images):
         # Calculate the SSIM and PSNR
         ssim_value = ssim(high_res_img, img, win_size=3, multichannel=True)
         psnr_value = psnr(high_res_img, img)
-
-        # Print the SSIM and PSNR
         print(f'Image {i+1} - SSIM: {ssim_value}, PSNR: {psnr_value}')
